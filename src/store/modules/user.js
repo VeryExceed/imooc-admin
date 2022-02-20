@@ -2,6 +2,7 @@ import { login } from '@/api/sys'
 import md5 from 'md5'
 import { setItem, getItem } from '@/utils/storage'
 import { TOKEN } from '@/constant'
+import router from '@/router'
 export default {
   namespaced: true,
   state: () => ({
@@ -22,7 +23,8 @@ export default {
           password: md5(password)
         })
           .then((data) => {
-            this.commit('user/setToken', data.data.data.token)
+            this.commit('user/setToken', data.token)
+            router.push('/')
             resolve()
           })
           .catch((err) => {
