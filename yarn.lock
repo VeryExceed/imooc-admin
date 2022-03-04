@@ -1115,6 +1115,44 @@
     "cssnano-preset-default" "^4.0.0"
     "postcss" "^7.0.0"
 
+"@intlify/core-base@9.2.0-beta.30":
+  "integrity" "sha512-tnOuI8gs4S7vv4WjG8oFL7vbZ4PM7Is/Ld3lRHQlBO7UjpnCVcQ94AgP/4F0cUPFn9JSPMQRN0aOOahW1BXvSA=="
+  "resolved" "https://registry.npmmirror.com/@intlify/core-base/-/core-base-9.2.0-beta.30.tgz"
+  "version" "9.2.0-beta.30"
+  dependencies:
+    "@intlify/devtools-if" "9.2.0-beta.30"
+    "@intlify/message-compiler" "9.2.0-beta.30"
+    "@intlify/shared" "9.2.0-beta.30"
+    "@intlify/vue-devtools" "9.2.0-beta.30"
+
+"@intlify/devtools-if@9.2.0-beta.30":
+  "integrity" "sha512-3OxGFi6ooya9DFqX/JsxFjrj9nGYcDoo4CRGYSDqnC+xv4bnsyB5ekmaYBiVZtagCdZdSUMxbTFphl1WbtgNLQ=="
+  "resolved" "https://registry.npmmirror.com/@intlify/devtools-if/-/devtools-if-9.2.0-beta.30.tgz"
+  "version" "9.2.0-beta.30"
+  dependencies:
+    "@intlify/shared" "9.2.0-beta.30"
+
+"@intlify/message-compiler@9.2.0-beta.30":
+  "integrity" "sha512-2kj/0nLIFrgiO86f9VifcUUcV8LdzXt4YYPIujx/LkTEQOuSFUo/bNiMaG1hyfiU/8mfq6tsaWKjoOZjeao1eQ=="
+  "resolved" "https://registry.npmmirror.com/@intlify/message-compiler/-/message-compiler-9.2.0-beta.30.tgz"
+  "version" "9.2.0-beta.30"
+  dependencies:
+    "@intlify/shared" "9.2.0-beta.30"
+    "source-map" "0.6.1"
+
+"@intlify/shared@9.2.0-beta.30":
+  "integrity" "sha512-E1WHRTIlUEse3d/6t1pAagSXRxmeVeNIhx5kT80dfpYxw8lOnCWV9wLve2bq9Fkv+3TD2I5j+CdN7jvSl3LdsA=="
+  "resolved" "https://registry.npmmirror.com/@intlify/shared/-/shared-9.2.0-beta.30.tgz"
+  "version" "9.2.0-beta.30"
+
+"@intlify/vue-devtools@9.2.0-beta.30":
+  "integrity" "sha512-hcqDfwP/oXVmVCaJ0RA+uv1WSCcd42/Y13S0bySmWZv2KamLcxiD7wYxp/MaECG/D4KZcSLkq/wDHTG7lhYf5Q=="
+  "resolved" "https://registry.npmmirror.com/@intlify/vue-devtools/-/vue-devtools-9.2.0-beta.30.tgz"
+  "version" "9.2.0-beta.30"
+  dependencies:
+    "@intlify/core-base" "9.2.0-beta.30"
+    "@intlify/shared" "9.2.0-beta.30"
+
 "@jridgewell/resolve-uri@^3.0.3":
   "integrity" "sha512-VPeQ7+wH0itvQxnG+lIzWgkysKIr3L9sslimFW55rHMdGu/qCQ5z5h9zq4gI8uBtqkpHhsF4Z/OwExufUCThew=="
   "resolved" "https://registry.npmmirror.com/@jridgewell/resolve-uri/-/resolve-uri-3.0.5.tgz"
@@ -1685,7 +1723,7 @@
   optionalDependencies:
     "prettier" "^1.18.2 || ^2.0.0"
 
-"@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.0.0-beta.14":
+"@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.0.0-beta.13", "@vue/devtools-api@^6.0.0-beta.14":
   "integrity" "sha512-iO/4FIezHKXhiDBdKySCvJVh8/mZPxHpiQrTy+PXVqJZgpTPTdHy4q8GXulaY+UKEagdkBb0onxNQZ0LNiqVhw=="
   "resolved" "https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.0.12.tgz"
   "version" "6.0.12"
@@ -9154,7 +9192,7 @@
   "resolved" "https://registry.npmmirror.com/source-map/-/source-map-0.5.7.tgz"
   "version" "0.5.7"
 
-"source-map@^0.6.0", "source-map@^0.6.1", "source-map@~0.6.0", "source-map@~0.6.1":
+"source-map@^0.6.0", "source-map@^0.6.1", "source-map@~0.6.0", "source-map@~0.6.1", "source-map@0.6.1":
   "integrity" "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="
   "resolved" "https://registry.npmmirror.com/source-map/-/source-map-0.6.1.tgz"
   "version" "0.6.1"
@@ -10169,6 +10207,16 @@
   "integrity" "sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog=="
   "resolved" "https://registry.npmmirror.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz"
   "version" "2.3.4"
+
+"vue-i18n@^9.2.0-beta.30":
+  "integrity" "sha512-5DqrgG9ffgC7j3RRAfViC0WUcdz0C3Ix1qq1AyQItpF7UkSB6iSJGEjBG6KdspbRQq/8t1YzDx4JRXbL05l6ow=="
+  "resolved" "https://registry.npmmirror.com/vue-i18n/-/vue-i18n-9.2.0-beta.30.tgz"
+  "version" "9.2.0-beta.30"
+  dependencies:
+    "@intlify/core-base" "9.2.0-beta.30"
+    "@intlify/shared" "9.2.0-beta.30"
+    "@intlify/vue-devtools" "9.2.0-beta.30"
+    "@vue/devtools-api" "^6.0.0-beta.13"
 
 "vue-loader-v16@npm:vue-loader@^16.1.0":
   "integrity" "sha512-7vKN45IxsKxe5GcVCbc2qFU5aWzyiLrYJyUuMz4BQLKctCj/fmCa0w6fGiiQ2cLFetNcek1ppGJQDCup0c1hpA=="
