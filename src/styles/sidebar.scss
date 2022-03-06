@@ -1,13 +1,13 @@
 #app {
   .main-container {
     min-height: 100%;
-    transition: margin-left #{sideBarDuration};
+    transition: margin-left #{$sideBarDuration};
     margin-left: $sideBarWidth;
     position: relative;
   }
 
   .sidebar-container {
-    transition: width #{sideBarDuration};
+    transition: width #{$sideBarDuration};
     width: $sideBarWidth !important;
     height: 100%;
     position: fixed;
@@ -53,6 +53,13 @@
 
     .svg-icon {
       margin-right: 16px;
+    }
+
+    // 在 menu 收起时，取消 margin-left
+    .el-menu--collapse {
+      .svg-icon {
+        margin-right: 0px;
+      }
     }
 
     .sub-el-icon {
