@@ -19,6 +19,7 @@ const getters = {
    */
   hasUserInfo: (state) => {
     return JSON.stringify(state.user.userInfo) !== '{}'
-  }
+  },
+  tagsViewList: (state) => state.app.tagsViewList
 }
 export default getters

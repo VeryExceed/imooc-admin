@@ -3,6 +3,9 @@
     <hamburger class="hamburger-container" />
     <breadcrumb class="breadcrumb-container" />
     <div class="right-menu">
+      <header-search class="right-menu-item hover-effect" />
+      <screenfull class="right-menu-item hover-effect" />
+
       <theme-picker class="right-menu-item hover-effect"></theme-picker>
       <!-- 头像 -->
       <lang-select class="right-menu-item hover-effect" />
@@ -34,10 +37,12 @@
 </template>
 
 <script setup>
+import HeaderSearch from '@/components/HeaderSearch'
 import ThemePicker from '@/components/ThemeSelect/index'
 import LangSelect from '@/components/LangSelect'
 import Hamburger from '@/components/Hamburger'
 import Breadcrumb from '@/components/Breadcrumb'
+import Screenfull from '@/components/Screenfull'
 import {} from 'vue'
 import { useStore } from 'vuex'
 
@@ -86,9 +91,9 @@ const logout = () => {
       &.hover-effect {
         cursor: pointer;
         transition: background 0.3s;
-        &:hover {
-          background: rgba(0, 0, 0, 0.025);
-        }
+        // &:hover {
+        //   background: rgba(0, 0, 0, 0.025);
+        // }
       }
     }
 
