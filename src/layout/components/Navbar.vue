@@ -1,14 +1,18 @@
 <template>
   <div class="navbar">
     <hamburger class="hamburger-container" />
-    <breadcrumb class="breadcrumb-container" />
+    <breadcrumb id="guide-breadcrumb" class="breadcrumb-container" />
+
     <div class="right-menu">
+      <guide class="right-menu-item hover-effect" />
+
       <header-search class="right-menu-item hover-effect" />
+
       <screenfull class="right-menu-item hover-effect" />
 
-      <theme-picker class="right-menu-item hover-effect"></theme-picker>
-      <!-- 头像 -->
+      <theme-picker class="right-menu-item hover-effect" />
       <lang-select class="right-menu-item hover-effect" />
+      <!-- 头像 -->
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <el-avatar
@@ -43,11 +47,13 @@ import LangSelect from '@/components/LangSelect'
 import Hamburger from '@/components/Hamburger'
 import Breadcrumb from '@/components/Breadcrumb'
 import Screenfull from '@/components/Screenfull'
-import {} from 'vue'
+import Guide from '@/components/Guide'
 import { useStore } from 'vuex'
+import { resetRouter } from '@/router'
 
 const store = useStore()
-const logout = () => {
+const logout = (context) => {
+  resetRouter()
   store.dispatch('user/logout')
 }
 </script>

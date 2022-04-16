@@ -11,10 +11,17 @@ import installElementPlus from './plugins/element'
 import installIcons from '@/icons'
 // 导入全局样式
 import './styles/index.scss'
+
+// filter
+import installFilter from '@/filters'
+// 指令
+import installDirective from '@/directives'
 // 导入权限控制模块
 import './permission'
 
 const app = createApp(App)
 installElementPlus(app)
 installIcons(app)
+installFilter(app)
+installDirective(app)
 app.use(store).use(router).use(i18n).mount('#app')

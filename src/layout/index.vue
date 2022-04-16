@@ -14,7 +14,7 @@
         <!-- 顶部的 navbar -->
         <navbar />
         <!-- tags -->
-        <tags-view />
+        <tags-view id="guide-tags" />
       </div>
       <!-- 内容区 -->
       <app-main />

@@ -16,7 +16,7 @@ export default {
      */
     setLanguage(state, lang) {
       setItem(LANG, lang)
-      state.langeuage = lang
+      state.language = lang
     },
     /**
      * 添加 tags
