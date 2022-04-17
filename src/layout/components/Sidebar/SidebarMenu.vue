@@ -30,11 +30,12 @@ const routes = computed(() => {
 })
 const route = useRoute()
 const activeMenu = computed(() => {
-  const { path } = route
+  const { meta, path } = route
+  if (meta.activeMenu) {
+    return meta.activeMenu
+  }
   return path
 })
-
-// console.log(JSON.stringify(routes.value))
 </script>
 
 <style lang="scss" scoped></style>
