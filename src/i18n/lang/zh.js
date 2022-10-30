@@ -20,6 +20,7 @@ export default {
   },
   route: {
     profile: '个人中心',
+    chart: '数据可视化',
     user: '用户',
     excelImport: 'Excel导入',
     userManage: '员工管理',
@@ -83,7 +84,7 @@ export default {
   },
   profile: {
     muted: '《vue3 改写 vue-element-admin，实现后台前端综合解决方案》项目演示',
-    introduce: '介绍',
+    introduce: '介绍（已升级 element-plus 正式版）',
     projectIntroduction: '项目介绍',
     projectFunction: '项目功能',
     feature: '功能',
@@ -178,5 +179,28 @@ export default {
     createSuccess: '文章创建成功',
     editorSuccess: '文章修改成功',
     sortSuccess: '文章排名修改成功'
+  },
+  chart: {
+    trendDataTitle: '本月累计收益（万元）',
+    trendDataTadayAdded: '今日新增收益',
+    trendDataTadayExpend: '今日新增支出',
+    trendDataTadayBalance: '今日结余',
+    income: '收益',
+    expend: '支出',
+    balance: '结余',
+    monthIncome: '月累计收益',
+    dayIncome: '日收益曲线',
+    unit: '万元',
+    pieChartTitle: '大区营销图示',
+    cloudChartTitle: '慕课 logo 文档云',
+    bmapChartTitle: '营收业绩图示（地图不支持国际化）',
+    tadayReceivable: '今日回款',
+    tadayBalance: '今日结余',
+    sheetProvince: '省份',
+    sheetCity: '城市',
+    sheetCoverage: '覆盖率',
+    sheetReceivable: '今日应收',
+    sheetActual: '今日实收',
+    sheetBalance: '今日结余'
   }
 }
